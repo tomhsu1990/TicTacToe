@@ -16,4 +16,4 @@ The feature needs to achieve two functionality.
   2. Block the opponent if the opponent is going to win.
       We utilize the opponent's counting variable to do this check. If row[opponent] is N-1 or col[opponent] is N-1, then we will set the       reward as N*N. This way, this placement has the maximum reward. Here is a question why do we not checking diagonal's counting             result. It is because when removing impossible row and column, the left position will cover the diagonal in the previous step.
       
-If after going through step 1 and 2, we cannot find a good placement, we will maintain a generalNextMove storage for returning a valid next move.
+If after going through step 1 and 2, we cannot find a good placement, we will maintain a "playerNextMove" storage for returning a valid next move.
